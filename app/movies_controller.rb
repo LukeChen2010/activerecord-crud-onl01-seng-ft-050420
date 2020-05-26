@@ -75,6 +75,7 @@ def can_update_using_update_method
   Movie.create(title: "Wat?")
   movie = Movie.where(title: "Wat Flick").first
   movie.update(title: "Wat, huh")
+  return movie
 end
 
 def can_update_multiple_items_at_once

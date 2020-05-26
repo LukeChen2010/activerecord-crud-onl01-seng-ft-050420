@@ -73,7 +73,7 @@ end
 def can_update_using_update_method
   # Update movie title to "Wat, huh?"
   Movie.create(title: "Wat?")
-  movie = Movie.where(title: "Wat Flick").first
+  movie = Movie.where(title: "Wat").first
   movie.update(title: "Wat, huh")
   return movie
 end
